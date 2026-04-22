@@ -45,7 +45,10 @@ footer {
 
         color: white;
         line-height: 2;
-
+        
+        a {
+            text-decoration: none;
+        }
         .social-links {
             display: flex;
             flex-direction: row;
