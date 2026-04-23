@@ -1,0 +1,64 @@
+.textarea {
+    display: flex;
+    justify-content: center;
+    .text {
+        height: 209px;
+        width: 343px;
+
+        p {
+            font-family: Palanquin;
+            color: rgba(84, 55, 13, 1);
+
+            line-height: 1.2;
+        }
+    }
+}
+
+.list-sec {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 341px;
+    width: 343px;
+
+    p {
+        font-family: Palanquin;
+        color: rgba(84, 55, 13, 1);
+        line-height: 1.2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.list-ol {
+    padding: 15px 25px 15px 25px;
+}
+
+li {
+    font-family: Palanquin;
+    line-height: 1.2;
+    color: rgba(84, 55, 13, 1);
+}
+
+span {
+    font-weight: bold;
+}
+
+.lorem {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+
+    p {
+        height: 342px;
+        width: 343px;
+        font-family: Palanquin;
+        color: rgba(84, 55, 13, 1);
+    }
+}
