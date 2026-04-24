@@ -149,10 +149,12 @@ body {
         .yt-video-yt{
             width: 40%;
             margin: auto;
+            min-width: 345px;
+            min-height: 193px;
+            max-width: 931px;
+            max-height: 520px;
         }
-
-
-
+        
         .list {
             .list-text {
                 padding: 10px 0px 10px 0px;
