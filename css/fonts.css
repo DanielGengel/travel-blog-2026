@@ -21,7 +21,7 @@ h1 {
     line-height: 1.2;
     color: #f1c953;
     padding-top: 10px;
-            padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -40,7 +40,7 @@ h3 {
     color: #54370d;
     padding-top: 30px;
       padding-bottom: 20px;
-                text-align: center;
+    text-align: center;
 }
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
     font-weight: 500;
     line-height: 1.2;
     color: #54370d;
-     text-align: center;
+    text-align: center;
     padding-top: 20px;
 }
 
@@ -60,6 +60,20 @@ p {
     /* font-size: 16px; */
     line-height: 1.2;
     color: #54370d;
+}
+
+li {
+    font-size: clamp(16px, 2vw, 24px);
+    font-family: "Palanquin";
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.2;
+    color: #54370d;
+}
+
+li span {
+    font-weight: bold;
+    font-size: clamp(16px, 2vw, 24px);
 }
 
 /* Footer Text (Imprint etc.) und Reading-Time etc. */
@@ -88,8 +102,8 @@ span {
     color: #54370d;
 }
 
-.footer-content  p {
-  color: white;
+.footer-content p {
+    color: white;
 }
 
 /* arima-regular - latin */
@@ -131,7 +145,8 @@ span {
     font-family: "Palanquin";
     font-style: normal;
     font-weight: 400;
-    src: url("../assets/fonts/palanquin-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../assets/fonts/palanquin-v17-latin-regular.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* palanquin-500 - latin */
 @font-face {
@@ -164,7 +179,8 @@ span {
     font-family: "Palanquin Dark";
     font-style: normal;
     font-weight: 400;
-    src: url("../assets/fonts/palanquin-dark-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../assets/fonts/palanquin-dark-v17-latin-regular.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* palanquin-dark-500 - latin */
 @font-face {
@@ -172,7 +188,8 @@ span {
     font-family: "Palanquin Dark";
     font-style: normal;
     font-weight: 500;
-    src: url("../assets/fonts/palanquin-dark-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../assets/fonts/palanquin-dark-v17-latin-500.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* palanquin-dark-600 - latin */
 @font-face {
@@ -180,7 +197,8 @@ span {
     font-family: "Palanquin Dark";
     font-style: normal;
     font-weight: 600;
-    src: url("../assets/fonts/palanquin-dark-v17-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../assets/fonts/palanquin-dark-v17-latin-600.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* palanquin-dark-700 - latin */
 @font-face {
@@ -188,5 +206,6 @@ span {
     font-family: "Palanquin Dark";
     font-style: normal;
     font-weight: 700;
-    src: url("../assets/fonts/palanquin-dark-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../assets/fonts/palanquin-dark-v17-latin-700.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
