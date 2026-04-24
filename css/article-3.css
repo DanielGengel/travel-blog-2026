@@ -9,7 +9,7 @@ body {
 
         content {
             /* Alle Text-Formatierungen START------------------------------- */
-            h1 {
+            /* h1 {
                 font-family: "Arima";
                 font-size: 40px;
                 font-weight: 700;
@@ -45,23 +45,23 @@ body {
                 padding-top: 20px;
             
                 text-align: center;
-            }
+            } */
 
-            p,
+            /* p,
             span {
                 font-family: "Palanquin";
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 1.2;
                 color: #54370d;
-            }
+            } */
 
-            .intro-text {
+            /* .intro-text {
                 font-family: "Palanquin";
                 font-weight: 400;
                 font-size: 18px;
                 color: #54370d;
-            }
+            } */
 
             /* Alle Text-Formatierungen ENDE ------------------------------- */
 
@@ -129,7 +129,7 @@ body {
                             color: #54370d;
                             padding: 0;
                         }
-                        p {
+                        span {
                             padding: 10px;
                             text-align: center;
                         }
