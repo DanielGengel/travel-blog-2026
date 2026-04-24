@@ -13,13 +13,14 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     min-height: 75dvh;
     font-family: "Palanquin";
     font-weight: 600;
     font-size: 20px;
 }
 
-.headline {
+.headline p {
     display: flex;
     flex-direction: column;
     justify-content: center;
