@@ -11,6 +11,19 @@
 /* Landing-page animation */
 
 .text {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -40%);
+
+    z-index: 3;
+
+    opacity: 0;
+
+    animation: fadeInText 6s ease-in-out;
+
+    max-width: 200px;
+
     h1 {
         font-family: "Arima";
         font-weight: 700;
@@ -25,16 +38,6 @@
         color: #54370d;
         line-height: 1;
     }
-
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    transform: translate(-50%, -40%);
-
-    z-index: 3;
-
-    opacity: 0;
-    animation: fadeInText 4s ease-in-out;
 }
 
 @keyframes fadeInText {
@@ -44,7 +47,7 @@
 }
 
 .slider {
-    min-height: calc(100dvh - 158px); /* 88px = Höhe minus header height und fixed Bottom Nav */
+    min-height: calc(100dvh - 158px); /* 88px + 70px = 158px = Höhe minus header height und fixed Bottom Nav */
 
     position: relative;
     width: 100%;
@@ -80,7 +83,7 @@
 .img2 {
     z-index: 2;
     transform: translateX(100%);
-    animation: slideOverlay 2s ease-out forwards;
+    animation: slideOverlay 4s ease-out forwards;
     /* animation-delay: 1.5s; */
     animation-delay: 2s;
 }
@@ -90,12 +93,34 @@
         transform: translate(100%);
     }
 
-    60% {
+    30% {
         transform: translateX(0); /* kommt ins Bild */
+    }
+
+    60% {
+        transform: translateX(0); /* bleibt ins Bild, Pause */
     }
 
     100% {
         transform: translate(-40%, -40%); /* raus nach oben links */
+    }
+}
+
+.img3 {
+    position: absolute;
+    left: 180px;
+    top: 240px;
+    z-index: 4;
+    opacity: 0; /* Icon unsichtbar machen */
+    /* transition: opacity 0.5s ease; */
+
+    animation: fadeInIcon 2s ease-in forwards;
+    animation-delay: 6s;
+}
+
+@keyframes fadeInIcon {
+    to {
+        opacity: 1;
     }
 }
 
