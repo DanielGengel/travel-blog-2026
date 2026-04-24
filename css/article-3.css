@@ -1,144 +1,13 @@
 body {
     main {
-        /* max-width: 375px; /* Mobile */
+        max-width: 1440px; /* Mobile */
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
 
         content {
-            /* Alle Text-Formatierungen START------------------------------- */
-            /* h1 {
-                font-family: "Arima";
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 1.2;
-                color: #f1c953;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            h2 {
-                font-family: "Palanquin";
-                font-weight: 600;
-                font-size: 20px;
-                color: #4ea487;
-            }
-
-            h3 {
-                font-family: "Arima";
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 1.2;
-                color: #54370d;
-                padding-top: 20px;
-                text-align: center;
-            }
-
-            h4 {
-                font-family: "Arima";
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 1.2;
-                color: #54370d;
-                padding-top: 20px;
-            
-                text-align: center;
-            } */
-
-            /* p,
-            span {
-                font-family: "Palanquin";
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 1.2;
-                color: #54370d;
-            } */
-
-            /* .intro-text {
-                font-family: "Palanquin";
-                font-weight: 400;
-                font-size: 18px;
-                color: #54370d;
-            } */
-
-            /* Alle Text-Formatierungen ENDE ------------------------------- */
-
-            /* ------------------------------------------------------------------------------------- */
-
-            .article-landing-section {
-                padding-top: 20px;
-                margin-bottom: 50px;
-                display: flex;
-                min-height: 390px;
-
-                .article-landing-section-left {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    .intro-text {
-                        padding-bottom: 15px;
-                    }
-
-                    .article-status {
-                        display: flex;
-                        flex-wrap: wrap;
-
-                        gap: 10px; /* Abstand bei Umbruch */
-                    }
-
-                    .item {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 5px;
-                        text-align: center;
-                    }
-                }
-                .article-landing-section-right {
-                    .author {
-                        width: 270px;
-                        height: 380px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #4ea48733;
-                        border-radius: 30px;
-
-                        img {
-                            width: 120px;
-                            padding-top: 20px;
-                            padding-bottom: 10px;
-                        }
-                        .author-name {
-                            font-family: "Arima";
-                            font-size: 16px;
-                            font-weight: 700;
-                            line-height: 1;
-                            color: #54370d;
-                            padding: 0;
-                        }
-                        .author-text {
-                            font-family: "Arima";
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 1;
-                            color: #54370d;
-                            padding: 0;
-                        }
-                        span {
-                            padding: 10px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-            /* ------------------------------------------------------------------------------------- */
-
             .article-content {
                 /* Graphiken in content section */
                 display: flex;
@@ -146,72 +15,100 @@ body {
                 align-items: center;
 
                 img {
-                    width: 345px;
+                    width: 300px;
                     margin: 20px;
                 }
-            }
 
-            /* ------------------------------------------------------------------------------------- */
+                .graph-container {
+                    .graph-container-left,
+                    .graph-container-right {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
 
-            .follow-me-section {
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                height: 200px;
-                max-width: 350px;
-                width: 100%;
-                margin-bottom: 20px;
-
-                h4 {
-                    top: 0;
-                    bottom: 1000px;
-                }
-             
-
-                > img {
-                    position: absolute; /* Pfeil linksbündig zentrieren */
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-70%);
-                }
-                .share-button {
-                    position: absolute; /* Button mittig zentrieren */
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 150px;
-                    height: 50px;
-                    border-radius: 20px;
-                    background-color: #4ea487;
-                    gap: 20px;
-                    margin-top: 20px;
+                        p {
                    
-                    /* Button Beschriftung "Share" */
-                    p {
-                        font-family: "Arima";
-                        font-size: 24px;
-                        font-weight: 700;
-                        color: #f1c953;
+                        width: 280px;
+                    }
+
+                        /* justify-content: center;  */
                     }
                 }
             }
-            /* ------------------------------------------------------------------------------------- */
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 512px) {
     .content {
-        .article-landing-section {
-            flex-direction: column;
-            align-items: center;
-            .article-landing-section-right {
-                .author {
-                    margin-top: 20px;
+        .article-content {
+            img {
+                width: 450px;
+            }
+
+            .graph-container {
+                .graph-container-left,
+                .graph-container-right {
+                    p {
+                        height: 120px;
+                        width: 420px;
+                    }
+
+                    img {
+                        width: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Zwei Graphiken nebeneinander platzieren */
+@media screen and (min-width: 769px) {
+    .content {
+        .article-content {
+            img {
+                width: 700px;
+            }
+
+            .graph-container {
+                display: flex;
+
+                .graph-container-left,
+                .graph-container-right {
+                    p {
+                        height: 210px;
+                        width: 320px;
+                    }
+
+                    img {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Zwei Graphiken nebeneinander platzieren */
+@media screen and (min-width: 1100px) {
+    .content {
+        .article-content {
+            img {
+                width: 820px;
+            }
+
+            .graph-container {
+                .graph-container-left,
+                .graph-container-right {
+                    p {
+                        height: 180px;
+                        width: 500px;
+                    }
+
+                    img {
+                        width: 520px;
+                    }
                 }
             }
         }
