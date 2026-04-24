@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 75dvh;
+    font-family: "Palanquin";
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
