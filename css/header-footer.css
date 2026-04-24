@@ -1,3 +1,28 @@
+
+
+
+
+
+
+
+/* ############################################################## */
+
+/* VOR ÄNDERUNGEN IN DIESER DATEI TEAM-MEETING !! */
+
+/* ############################################################## */
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0; /* Alle Abstände auf null setzen */
     padding: 0;
@@ -31,34 +56,43 @@ footer {
     height: 225px;
     width: 100%;
 
-    display: flex;
-    justify-content: center;
-
     .footer-content {
-        font-family: "Palanquin";
-        font-size: 16px;
-        width: 100%;
-        max-width: 375px;
-        padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
 
-        color: white;
-        line-height: 2;
-        
-        a {
-            text-decoration: none;
-        }
-        .social-links {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+        padding-top: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
 
+        .footer-left {
+            font-family: "Palanquin";
+            font-size: 16px;
+            width: 100%;
+            max-width: 375px;
+
+            color: white;
+            line-height: 2;
+
+            a {
+                text-decoration: none;
+            }
             .copyright {
                 display: flex;
                 align-items: center;
                 gap: 5px;
+            }
+        }
+        .footer-right {
+            .social-links {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
             }
         }
     }
@@ -90,6 +124,48 @@ footer {
                 width: 40px;
                 height: 40px;
             }
+        }
+    }
+}
+
+/* Zwei Graphiken nebeneinander platzieren */
+@media screen and (min-width: 768px) {
+    footer {
+        height: 150px;
+
+        .footer-content {
+            width: 100%;
+            padding-top: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .footer-left {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                gap: 20px;
+
+                p {
+                    font-size: 16px;
+                }
+
+                .copyright {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .footer-right {
+                .social-links {
+                    gap: 10px;
+                }
+            }
+        }
+
+        .footer-navigation {
+            display: none;
         }
     }
 }
