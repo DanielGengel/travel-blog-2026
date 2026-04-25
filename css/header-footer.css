@@ -30,6 +30,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 10px;
 
         .header-nav-bar {
             display: none;
@@ -45,6 +46,7 @@ header {
         }
 
         a {
+            font-family: "Arima";
             color: white;
             text-decoration: none;
         }
@@ -151,7 +153,8 @@ footer {
     header {
         .header-content {
             align-items: center;
-            justify-content: space-around;
+            justify-content: flex-start;
+            padding-left: 30px;
             gap: 30px;
             .header-nav-bar {
                 display: unset;
@@ -216,7 +219,7 @@ footer {
         .header-content {
             height: 128px;
             max-width: 980px;
-            justify-content: space-between;
+            /* justify-content: space-between; */ 
             margin-left: auto;
             margin-right: auto;
 
