@@ -28,24 +28,24 @@
 
 .text {
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 45%;
+    left: 30%;
     transform: translate(-50%, -40%);
 
     z-index: 3;
 
-    opacity: 0;
+    opacity: 0; /* text opacity */
 
-    animation: fadeInText 6s ease-in-out;
+    animation: fadeInText 6s ease-in-out forwards;
 
     max-width: 200px;
 
-    /* h1 {
+    h1 {
         font-family: "Arima";
         font-weight: 700;
-        font-size: 40px;
+        font-size: 36px;
         color: #54370d;
-    }
+    } 
 
     p {
         font-family: "Palanquin";
@@ -53,14 +53,34 @@
         font-size: 18px;
         color: #54370d;
         line-height: 1;
-    } */
+    } 
 }
 
 @keyframes fadeInText {
-    to {
+   
+
+    0% {
+        opacity: 0;
+    }
+
+    30% {
         opacity: 1;
     }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
+
 
 .slider {
     padding-left: 0;
@@ -70,7 +90,7 @@
     position: relative;
     width: 100%;
     height: 400px;
-    background: #f1c953;
+    background: #F1C953;
     overflow: hidden;
 }
 
@@ -85,9 +105,11 @@
 }
 
 .img1 {
+    width: 100%;
+    height: 100%;
     z-index: 1;
     transform: translateX(100%);
-    animation: slideIn 1.5s ease-out forwards;
+    animation: slideIn 1s ease-out forwards;
     /* animation-delay: 1.5s; */
     animation-delay: 2s;
 }
@@ -99,30 +121,40 @@
 }
 
 .img2 {
+    height: 98%;
     z-index: 2;
     transform: translateX(100%);
-    animation: slideOverlay 4s ease-out forwards;
+    animation: slideOverlay 2s ease-out forwards;
     /* animation-delay: 1.5s; */
     animation-delay: 2s;
 }
 
 @keyframes slideOverlay {
     0% {
-        transform: translate(100%);
+        transform: translate(100%, 0);
     }
 
     30% {
-        transform: translateX(0); /* kommt ins Bild */
+        transform: translate(0, 0); /* im Viewport */
     }
 
-    60% {
-        transform: translateX(0); /* bleibt ins Bild, Pause */
+    50% {
+        transform: translate(-10%, 0); /*  nach links raus */
+    }
+
+    70% {
+        transform: translate(-10%, 0); /*  Pause */
     }
 
     100% {
-        transform: translate(-40%, -40%); /* raus nach oben links */
+        transform: translate(-40%, -40%); /* nach oben links */
     }
 }
+
+
+
+
+  
 
 .img3 {
     position: absolute;
