@@ -219,7 +219,7 @@ footer {
         .header-content {
             height: 128px;
             max-width: 980px;
-            justify-content: space-between;
+            /* justify-content: space-between; */ 
             margin-left: auto;
             margin-right: auto;
 
