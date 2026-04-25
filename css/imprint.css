@@ -8,7 +8,9 @@
     scroll-behavior: smooth;
 }
 
-.imprint-complete{
+.imprint-complete {
+    max-width: 100dvw;
+    min-height: 80dvh;
     display: flex;
     justify-content: center;
     align-items: center;
