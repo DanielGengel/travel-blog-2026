@@ -120,6 +120,7 @@ body {
                 align-items: center;
                 background-color: rgba(78, 164, 135, 0.2);
                 border-radius: 30px;
+            margin-bottom: 40px;
                 .box-text {
                     padding: 10px;
                     text-align: center;
