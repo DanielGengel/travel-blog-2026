@@ -28,3 +28,7 @@ h2 {
     text-align: center;
     font-size: 30px;
 }
+
+.headline{
+    font-size: clamp(24px, 3vw, 48px);
+}
