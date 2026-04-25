@@ -31,8 +31,8 @@ body {
         .yt-video-yt {
             width: 40%;
             margin: auto;
-            min-width: 345px;
-            min-height: 193px;
+            min-width: 300px;
+            min-height: 100px;
             max-width: 931px;
             max-height: 520px;
         }
