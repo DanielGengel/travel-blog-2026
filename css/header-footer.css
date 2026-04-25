@@ -1,27 +1,14 @@
-
-
-
-
-
-
-
 /* ############################################################## */
 
 /* VOR ÄNDERUNGEN IN DIESER DATEI TEAM-MEETING !! */
 
 /* ############################################################## */
+/* Last Changes */
+/* Footer Padding left and right von 25px auf 10px */
+/* Ab 512px header nav bar anzeigen, Footer NavBar aus */
+/* Ab 768px Footer Links horizontal
 
-
-
-
-
-
-
-
-
-
-
-
+/* ############################################################## */
 
 * {
     margin: 0; /* Alle Abstände auf null setzen */
@@ -44,6 +31,24 @@ header {
         align-items: center;
         justify-content: center;
 
+        .header-nav-bar {
+            display: none;
+            padding-left: 50px;
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                list-style-type: none;
+                gap: 40px;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
         img {
             width: 56px;
             height: 56px;
@@ -62,17 +67,17 @@ footer {
         margin-right: auto;
 
         padding-top: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
 
         .footer-left {
             font-family: "Palanquin";
-            font-size: 16px;
+            font-size: 14px;
             width: 100%;
-            max-width: 375px;
+            max-width: 700px;
 
             color: white;
             line-height: 2;
@@ -92,7 +97,7 @@ footer {
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                gap: 10px;
+                gap: 5px;
             }
         }
     }
@@ -128,11 +133,49 @@ footer {
     }
 }
 
-/* Zwei Graphiken nebeneinander platzieren */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 375px) {
+    header {
+        .header-content {
+            padding-left: 0;
+        }
+    }
+    footer {
+        .footer-content {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 512px) {
+    header {
+        .header-content {
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            .header-nav-bar {
+                display: unset;
+            }
+        }
+    }
+
     footer {
         height: 150px;
 
+        .footer-navigation {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        .header-content {
+            height: 88px;
+        }
+    }
+
+    footer {
         .footer-content {
             width: 100%;
             padding-top: 50px;
@@ -142,10 +185,12 @@ footer {
             justify-content: space-between;
 
             .footer-left {
+                max-width: 700px;
                 display: flex;
                 flex-direction: row-reverse;
-                align-items: center;
-                gap: 20px;
+                justify-content: flex-end; /* Flex-end wegen row-reverse */
+
+                gap: 50px;
 
                 p {
                     font-size: 16px;
@@ -163,9 +208,41 @@ footer {
                 }
             }
         }
+    }
+}
 
-        .footer-navigation {
-            display: none;
+@media screen and (min-width: 1024px) {
+    header {
+        .header-content {
+            height: 128px;
+            max-width: 980px;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+
+            img {
+                width: 72px;
+                height: 72px;
+            }
+        }
+    }
+    footer {
+        .footer-content {
+            .footer-left {
+                p {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        .header-content {
+            max-width: 1440px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }

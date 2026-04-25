@@ -1,19 +1,8 @@
-
-
-
 /* ############################################################## */
 
 /* VOR ÄNDERUNGEN IN DIESER DATEI TEAM-MEETING !!!!!!!!!!!!!! */
 
 /* ############################################################## */
-
-
-
-
-
-
-
-
 
 body {
     main {
@@ -32,6 +21,8 @@ body {
                 margin-bottom: 50px;
                 display: flex;
                 min-height: 390px;
+                flex-direction: column;
+                align-items: center;
 
                 .article-landing-section-left {
                     display: flex;
@@ -43,6 +34,7 @@ body {
                     }
 
                     .article-status {
+                        max-width: 200px;
                         display: flex;
                         flex-wrap: wrap;
 
@@ -59,14 +51,15 @@ body {
                 }
                 .article-landing-section-right {
                     .author {
-                        width: 270px;
-                        height: 380px;
+                        /* width: 270px;
+                        height: 380px; */
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         background-color: #4ea48733;
                         border-radius: 30px;
+                        margin-top: 20px;
 
                         img {
                             width: 120px;
@@ -100,49 +93,49 @@ body {
             /* ------------------------------------------------------------------------------------- */
 
             .mini-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 196px;
-            height: 66px;
-            background-color: rgba(78, 164, 135, 1);
-            border-radius: 10px;
-            transform: rotate(-12deg);
-            .light {
                 display: flex;
-                align-items: center;
                 justify-content: center;
-                gap: 10px;
+                align-items: center;
+                width: 196px;
+                height: 66px;
+                background-color: rgba(78, 164, 135, 1);
+                border-radius: 10px;
+                transform: rotate(-12deg);
+                .light {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 28px;
+                    color: rgba(241, 201, 83, 1);
+                }
             }
-            p {
-                font-weight: bold;
-                font-size: 28px;
-                color: rgba(241, 201, 83, 1);
-            }
-        }
 
-        .big-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgba(78, 164, 135, 0.2);
-            border-radius: 30px;
-            .box-text {
-                padding: 10px;
-                text-align: center;
-                font-family: "Palanquin";
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 1.2;
-                color: rgba(84, 55, 13, 1);
-                text-align: start;
-                padding: 30px;
+            .big-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(78, 164, 135, 0.2);
+                border-radius: 30px;
+                .box-text {
+                    padding: 10px;
+                    text-align: center;
+                    font-family: "Palanquin";
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: rgba(84, 55, 13, 1);
+                    text-align: start;
+                    padding: 30px;
+                }
+                .box-fett {
+                    color: rgba(78, 164, 135, 1);
+                    font-weight: bold;
+                }
             }
-            .box-fett {
-                color: rgba(78, 164, 135, 1);
-                font-weight: bold;
-            }
-        }
 
             /* ------------------------------------------------------------------------------------- */
 
@@ -196,14 +189,56 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) {
     .content {
         .article-landing-section {
             flex-direction: column;
             align-items: center;
+            .article-landing-section-left {
+                .article-status {
+                    max-width: 400px;
+                }
+            }
             .article-landing-section-right {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .content {
+        .article-landing-section {
+            .article-landing-section-left {
+                .article-status {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        .article-landing-section {
+            flex-direction: row;
+
+            .article-landing-section-left {
+                margin-top: 20px;
+                min-height: 370px;
+
+                justify-content: space-between;
+
+                .article-status {
+                    max-width: 400px;
+                }
+            }
+            .article-landing-section-right {
+                margin-left: 30px;
                 .author {
                     margin-top: 20px;
+                    width: 270px;
+                    height: 380px;
                 }
             }
         }
@@ -211,4 +246,17 @@ body {
             max-width: 500px;
         }
     }
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        .article-landing-section {
+            .article-landing-section-left {
+                .article-status {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
 }
