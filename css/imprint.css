@@ -8,16 +8,17 @@
     scroll-behavior: smooth;
 }
 
+.imprint-complet{
+    padding-top: 250px;
+}
 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    min-height: 75dvh;
     font-family: "Palanquin";
     font-weight: 600;
-    font-size: 20px;
 }
 
 .headline p {
@@ -29,6 +30,15 @@ h2 {
     font-size: 30px;
 }
 
-.headline{
+.headline {
     font-size: clamp(24px, 3vw, 48px);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    min-height: 100%;
 }
