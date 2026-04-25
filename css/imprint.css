@@ -8,9 +8,12 @@
     scroll-behavior: smooth;
 }
 
-.imprint-complet{
-    padding-top: 250px;
+.imprint-complete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 h2 {
     display: flex;
     justify-content: center;
