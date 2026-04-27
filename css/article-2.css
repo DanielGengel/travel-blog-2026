@@ -3,8 +3,6 @@ body {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     content {
@@ -50,10 +48,10 @@ body {
             }
         }
         .text-mid {
-            padding-bottom: 24px;
+            padding-bottom: 90px;
         }
 
-        .mini-box {
+        /* .mini-box {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -96,6 +94,13 @@ body {
                 color: rgba(78, 164, 135, 1);
                 font-weight: bold;
             }
-        }
+         } */
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .video {
+        width: 275px;
+        margin-right: auto;
     }
 }
