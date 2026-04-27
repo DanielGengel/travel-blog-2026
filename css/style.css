@@ -29,12 +29,12 @@
 .text {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -40%);
 
     z-index: 3;
 
-    opacity: 0; /* text opacity */
+    opacity: 1; /* text opacity */
 
     animation: fadeInText 6s ease-in-out forwards;
 
@@ -45,7 +45,7 @@
         font-weight: 700;
         font-size: 36px;
         color: #54370d;
-    } 
+    }
 
     p {
         font-family: "Palanquin";
@@ -53,12 +53,10 @@
         font-size: 18px;
         color: #54370d;
         line-height: 1;
-    } 
+    }
 }
 
 @keyframes fadeInText {
-   
-
     0% {
         opacity: 0;
     }
@@ -80,8 +78,6 @@
     }
 }
 
-
-
 .slider {
     padding-left: 0;
     padding-right: 0;
@@ -90,7 +86,7 @@
     position: relative;
     width: 100%;
     height: 400px;
-    background: #F1C953;
+    background: #f1c953;
     overflow: hidden;
 }
 
@@ -151,21 +147,26 @@
     }
 }
 
-
-
-
-  
-
 .img3 {
     position: absolute;
-    left: 180px;
-    top: 240px;
-    z-index: 4;
-    opacity: 0; /* Icon unsichtbar machen */
-    /* transition: opacity 0.5s ease; */
+    width: 160px;
+    height: 160px;
+    top: 20%;
+    left: 35%;
+    transform: translateX(-50%);
 
-    animation: fadeInIcon 2s ease-in forwards;
-    animation-delay: 6s;
+    z-index: 4;
+
+    opacity: 0;
+
+    animation:
+        fadeInIcon 2s ease-in forwards,
+        rotate 5s linear infinite;
+
+    /* unterschiedliche Delays */
+    animation-delay:
+        4s,
+        /* FadeIn startet nach 4s */ 6s; /* Rotation startet nach 6s (4s + 2s Fade + 0s Pause) */
 }
 
 @keyframes fadeInIcon {
@@ -173,6 +174,32 @@
         opacity: 1;
     }
 }
+
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.img4 {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 30%;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 5;
+    opacity: 0;
+    animation: fadeInIcon 2s ease-in forwards;
+
+    animation-delay: 4s; /* Rotation startet nach 6s (4s + 2s Fade + 0s Pause) */
+}
+
+
+
 
 /* Landing-page animation Ende  --------------------- */
 
