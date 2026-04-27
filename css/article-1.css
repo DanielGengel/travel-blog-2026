@@ -45,6 +45,7 @@ body {
                 height: 100%;
 
                 position: absolute; /* Macht nur Sinn, wenn der Slider position: relative; hat */
+                left: 0;
                 display: flex;
 
                 transition: all 1s ease-in-out;
@@ -70,7 +71,7 @@ body {
             der Gesamtbreite transfomiert (verschoben) werden. Die Gesamtbreite wurde mit overflow: hidden;
             versteckt.  */
             .slider-a input[value="one"]:checked ~ .slider-a-wrapper {
-                transform: translateX(calc(200% / 5));
+                transform: translateX(0);
 
                 .element-two {
                     transform: perspective(300px) rotateY(-20deg) translateX(0) scaleX(0.9) scaleY(0.9);
@@ -84,7 +85,7 @@ body {
             }
 
             .slider-a input[value="two"]:checked ~ .slider-a-wrapper {
-                transform: translateX(calc(100% / 5));
+                transform: translateX(-20%);
 
                 .element-one {
                     transform: translateX(0) perspective(300px) rotateY(20deg) scaleX(0.9) scaleY(0.9);
@@ -103,7 +104,7 @@ body {
             }
 
             .slider-a input[value="three"]:checked ~ .slider-a-wrapper {
-                transform: translateX(0);
+                transform: translateX(-40%);
 
                 .element-one {
                     transform: translateX(0) perspective(300px) rotateY(20deg) scaleX(0.9) scaleY(0.9);
@@ -127,7 +128,7 @@ body {
             }
 
             .slider-a input[value="four"]:checked ~ .slider-a-wrapper {
-                transform: translateX(calc(-100% / 5));
+                transform: translateX(-60%);
 
                 .element-two {
                     transform: translateX(0) perspective(300px) rotateY(20deg) scaleX(0.9) scaleY(0.9);
@@ -146,7 +147,7 @@ body {
             }
 
             .slider-a input[value="five"]:checked ~ .slider-a-wrapper {
-                transform: translateX(calc(-200% / 5));
+                transform: translateX(-80%);
 
                 .element-three {
                     transform: translateX(0) perspective(300px) rotateY(20deg) scaleX(0.9) scaleY(0.9);

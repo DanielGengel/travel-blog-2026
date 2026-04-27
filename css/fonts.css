@@ -10,102 +10,6 @@
 /* ############################################################## */
 
 
-
-
-
-
-h1 {
-    font-size: clamp(24px, 4vw, 96px);
-    font-family: "Arima";
-    font-weight: 700;
-    line-height: 1.2;
-    color: #f1c953;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-h2 {
-    font-size: clamp(20px, 3vw, 54px);
-    font-family: "Palanquin";
-    font-weight: 600;
-    line-height: 1.2;
-    color: #4ea487;
-}
-
-h3 {
-    font-size: clamp(20px, 3vw, 48px);
-    font-family: "Arima";
-    font-weight: 600;
-    line-height: 1.2;
-    color: #54370d;
-    padding-top: 30px;
-      padding-bottom: 20px;
-    text-align: center;
-}
-
-h4 {
-    font-size: clamp(18px, 3vw, 24px);
-    font-family: "Arima";
-    font-weight: 500;
-    line-height: 1.2;
-    color: #54370d;
-    text-align: center;
-    padding-top: 20px;
-}
-
-p {
-    font-size: clamp(16px, 2vw, 24px);
-    font-family: "Palanquin";
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.2;
-    color: #54370d;
-}
-
-li {
-    font-size: clamp(16px, 2vw, 24px);
-    font-family: "Palanquin";
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.2;
-    color: #54370d;
-}
-
-li span {
-    font-weight: bold;
-    font-size: clamp(16px, 2vw, 24px);
-}
-
-/* Footer Text (Imprint etc.) und Reading-Time etc. */
-span {
-    font-size: 16px;
-    font-family: "Palanquin";
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.2;
-    color: #54370d;
-}
-
-.button-font {
-    font-size: 24px;
-    font-family: "Arima";
-    font-weight: 700;
-    line-height: 1.2;
-    color: #f1c953;
-}
-
-.intro-text {
-    font-size: clamp(18px, 2vw, 32px);
-    font-family: "Palanquin";
-    font-weight: 400;
-    font-size: 18px;
-    color: #54370d;
-}
-
-.footer-content p {
-    color: white;
-}
-
 /* arima-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -208,4 +112,100 @@ span {
     font-weight: 700;
     src: url("../assets/fonts/palanquin-dark-v17-latin-700.woff2")
         format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
+h1 {
+    font-size: clamp(24px, 4vw, 96px);
+    font-family: "Arima";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f1c953;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: clamp(20px, 3vw, 54px);
+    font-family: "Palanquin";
+    font-weight: 600;
+    line-height: 1.2;
+    color: #4ea487;
+}
+
+h3 {
+    font-size: clamp(20px, 3vw, 48px);
+    font-family: "Arima";
+    font-weight: 600;
+    line-height: 1.2;
+    color: #54370d;
+    padding-top: 30px;
+      padding-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-size: clamp(18px, 3vw, 24px);
+    font-family: "Arima";
+    font-weight: 500;
+    line-height: 1.2;
+    color: #54370d;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    font-size: clamp(16px, 2vw, 24px);
+    font-family: "Palanquin";
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.2;
+    color: #54370d;
+}
+
+li {
+    font-size: clamp(16px, 2vw, 24px);
+    font-family: "Palanquin";
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.2;
+    color: #54370d;
+}
+
+li span {
+    font-weight: bold;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+/* Footer Text (Imprint etc.) und Reading-Time etc. */
+span {
+    font-size: 16px;
+    font-family: "Palanquin";
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.2;
+    color: #54370d;
+}
+
+.button-font {
+    font-size: 24px;
+    font-family: "Arima";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f1c953;
+}
+
+.intro-text {
+    font-size: clamp(18px, 2vw, 32px);
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 18px;
+    color: #54370d;
+}
+
+.footer-content p {
+    color: white;
 }

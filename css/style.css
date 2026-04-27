@@ -19,7 +19,7 @@
 }
 
 .content {
-    max-width: 1440px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -219,13 +219,13 @@ main {
             gap: 10px;
             padding-top: 50px;
             padding-bottom: 30px;
-            h2 {
+            /* h2 {
                 font-family: "Arima";
                 font-size: 40px;
                 font-weight: 700;
                 line-height: 1.2;
                 color: #4ea487;
-            }
+            } */
         }
 
         /* HIGHLIGHT SECTION START  --------------------- */
@@ -238,7 +238,7 @@ main {
             align-items: center;
 
             p {
-                max-width: 1000px;
+                max-width: 1200px;
                 padding-bottom: 40px;
             }
 
@@ -370,7 +370,7 @@ main {
                 padding: 16px;
                 margin-bottom: 20px;
                 border-radius: 12px;
-                max-width: 1000px;
+                max-width: 1200px;
 
                 margin-left: auto;
                 margin-right: auto;
@@ -545,7 +545,7 @@ main {
             display: flex;
 
             img {
-                width: 100dvw;
+                width: 100%;
             }
         }
         .slider {
@@ -581,6 +581,19 @@ main {
             .highlight-section {
                 .highlights-slider {
                     max-width: 1000px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        .content {
+            .highlight-section {
+                .highlights-slider {
+                    max-width: 1200px;
                     height: 500px;
                 }
             }
