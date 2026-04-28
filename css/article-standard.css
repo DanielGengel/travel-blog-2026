@@ -6,12 +6,12 @@
 
 body {
     main {
-        max-width: 1440px; /* Mobile */
+        max-width: 1200px; /* Mobile */
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         .main-content {
             /* ------------------------------------------------------------------------------------- */
@@ -279,6 +279,15 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        main {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }

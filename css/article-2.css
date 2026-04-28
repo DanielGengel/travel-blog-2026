@@ -1,5 +1,6 @@
 body {
     main {
+        /* max-width: 1200px; */
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -98,9 +99,12 @@ body {
     }
 }
 
-@media screen and (max-width: 374px) {
+
+@media screen and (max-width: 320px) {
     .video {
-        width: 275px;
+        margin-left: auto;
         margin-right: auto;
     }
 }
+
+
