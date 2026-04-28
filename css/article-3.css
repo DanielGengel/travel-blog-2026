@@ -7,7 +7,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
 
-        content {
+        .main-content {
             .article-content {
                 /* Graphiken in content section */
                 display: flex;
@@ -26,10 +26,10 @@ body {
                         flex-direction: column;
                         align-items: center;
 
-                        p {
+                        /* p {
                    
                         width: 280px;
-                    }
+                    } */
 
                         /* justify-content: center;  */
                     }
@@ -40,22 +40,26 @@ body {
 }
 
 @media screen and (min-width: 512px) {
-    .content {
-        .article-content {
-            img {
-                width: 450px;
-            }
-
-            .graph-container {
-                .graph-container-left,
-                .graph-container-right {
-                    p {
-                        height: 120px;
-                        width: 420px;
-                    }
-
+    body {
+        main {
+            .main-content {
+                .article-content {
                     img {
                         width: 450px;
+                    }
+
+                    .graph-container {
+                        .graph-container-left,
+                        .graph-container-right {
+                            p {
+                                /* height: 120px; */
+                                width: 420px;
+                            }
+
+                            img {
+                                width: 450px;
+                            }
+                        }
                     }
                 }
             }
@@ -65,24 +69,28 @@ body {
 
 /* Zwei Graphiken nebeneinander platzieren */
 @media screen and (min-width: 769px) {
-    .content {
-        .article-content {
-            img {
-                width: 700px;
-            }
-
-            .graph-container {
-                display: flex;
-
-                .graph-container-left,
-                .graph-container-right {
-                    p {
-                        height: 210px;
-                        width: 320px;
+    body {
+        main {
+            .main-content {
+                .article-content {
+                    img {
+                        width: 700px;
                     }
 
-                    img {
-                        width: 350px;
+                    .graph-container {
+                        display: flex;
+
+                        .graph-container-left,
+                        .graph-container-right {
+                            p {
+                                height: 220px;
+                                width: 320px;
+                            }
+
+                            img {
+                                width: 350px;
+                            }
+                        }
                     }
                 }
             }
@@ -92,22 +100,26 @@ body {
 
 /* Zwei Graphiken nebeneinander platzieren */
 @media screen and (min-width: 1100px) {
-    .content {
-        .article-content {
-            img {
-                width: 820px;
-            }
-
-            .graph-container {
-                .graph-container-left,
-                .graph-container-right {
-                    p {
-                        height: 180px;
-                        width: 500px;
+    body {
+        main {
+            .main-content {
+                .article-content {
+                    img {
+                        width: 820px;
                     }
 
-                    img {
-                        width: 520px;
+                    .graph-container {
+                        .graph-container-left,
+                        .graph-container-right {
+                            p {
+                                height: 180px;
+                                width: 500px;
+                            }
+
+                            img {
+                                width: 520px;
+                            }
+                        }
                     }
                 }
             }

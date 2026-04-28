@@ -6,7 +6,7 @@ body {
         padding-left: 10px;
         padding-right: 10px;
 
-        content {
+        .main-content {
             /* ------------------------------------------------------------------------------------- */
 
             body {
@@ -331,7 +331,7 @@ body {
     main {
         padding-left: 30px;
         padding-right: 30px;
-        .content {
+        .main-content {
             .photo-slider {
                 .slider-a {
                     display: none;
@@ -389,7 +389,7 @@ body {
 
 @media screen and (max-width: 768px) {
     main {
-        .content {
+        .main-content {
             .photo-slider {
                 .slider-b {
                     display: none;

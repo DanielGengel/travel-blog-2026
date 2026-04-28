@@ -5,7 +5,7 @@ body {
         margin-right: auto;
     }
 
-    content {
+    .main-content {
         .video {
             position: relative;
             padding-top: 56.25%;
